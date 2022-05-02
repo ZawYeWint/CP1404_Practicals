@@ -28,6 +28,7 @@ def run_tests():
     languages = [ruby, python, visual_basic]
     print(python)
 
+    print("The dynamically typed languages are: ")
     for language in languages:
         if language.check_dynamic():
             print(language.name)

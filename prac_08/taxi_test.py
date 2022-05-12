@@ -5,6 +5,7 @@ def main():
     taxi = Taxi("Prius 1", 100, 1.23)
 
     # Drive the taxi 40 km
+    taxi.drive(40)
 
     # Print the taxi's details and the current fare
 

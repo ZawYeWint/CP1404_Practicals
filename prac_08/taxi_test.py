@@ -10,9 +10,12 @@ def main():
     # Print the taxi's details and the current fare
     print(taxi)
     print(f"Current fare: ${taxi.get_fare():.2f}")
+    print()
 
     # Restart the meter (start a new fare) and then drive the car 100 km
-
+    taxi.start_fare()   # reset the current distance fare to 0
+    print(f"Current fare: ${taxi.get_fare():.2f} before moving any new distance")
+    taxi.drive(100) # fuel left is 6 units (60km worth of distance) expected fare 1.23 * 60 = 73.80
     # Print the details and the current fare
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ def main():
 
     # Print the taxi's details and the current fare
     print(taxi)
-    print(taxi.get_fare())
+    print(f"Current fare: ${taxi.get_fare():.2f}")
 
     # Restart the meter (start a new fare) and then drive the car 100 km
 

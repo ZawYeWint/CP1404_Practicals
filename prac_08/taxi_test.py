@@ -19,7 +19,7 @@ def main():
     distance_driven = taxi.drive(100)  # fuel left is 6 units (60km worth of distance) expected fare 1.23 * 60 = 73.80
 
     # Print the details and the current fare
-    print(f"After attempting to drive another 100km... Actual distance: {distance_driven} km")
+    print(f"After attempting to drive another 100km, the actual distance is: {distance_driven} km")
     print(taxi)
     print(f"Current fare: ${taxi.get_fare():.2f}")
 

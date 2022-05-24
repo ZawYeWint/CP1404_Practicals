@@ -1,13 +1,12 @@
 """
-CP1404/CP5632 Practical
+CP1404/CP5632 Practical - Suggested Solution
 Demos of various os module examples
 """
-import shutil
 import os
 
 
 def main():
-    """Demo os module functions."""
+    """Demo of os module functions."""
     print("Starting directory is: {}".format(os.getcwd()))
 
     # Change to desired directory
@@ -57,6 +56,10 @@ def demo_walk():
         print("(Current working directory is: {})".format(os.getcwd()))
 
         # add a loop to rename the files
+        for filename in filenames:
+            full_name = os.path.join(directory_name, filename)
+            new_name = os.path.join(directory_name, get_fixed_filename(filename))
+            os.rename(full_name, new_name)
 
 
 main()
